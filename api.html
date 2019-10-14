@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Do you like Chuck Norris?</h1>
+    <img src="https://thumbs.gfycat.com/DopeyBiodegradableHorsemouse-small.gif"/>
+    <br>
+        <button onclick="getRequest('http://api.icndb.com/jokes/')">Give me jokes!</button>
+       <script>
+       /*function getRequest(url) {
+           $.getJSON(url, function (result) {
+                    for(let i=0; i<=result.value.length;i++) {
+                        document.getElementById('doc-text').innerHTML += result.value[i].joke + '<br/>';
+                    }
+                   
+                   
+           });
+       }
+       getRequest(url);*/
+       function getRequest(url) {
+           $.getJSON(url, function (result) {
+                    var randomNumber = Math.floor(Math.random()*result.value.length);
+                        document.getElementById('doc-text').innerHTML += result.value[randomNumber].joke + '<br/>';
+                   
+                   
+           });
+       }
+       getRequest(url);
+   </script>
+​
+   <div id="doc-text"></div>
+    
+</body>
+</html>
