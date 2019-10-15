@@ -1,7 +1,7 @@
 body {
     text-align: center;
     background-color: brown;
-    color: white;
+    color: black;
     font-size: 20px;
     font-family: 'Zhi Mang Xing', cursive;
 }
@@ -11,12 +11,14 @@ h1 {
 .page-container{
     display: flex;
 }
-.chuck-norris {
-    width: 50%
+.chuck-norris,
+.jeopardy,
+.pokemon {
+    width: 50%;
+    background-color: white;
+    border-radius: 50%;
 }
-.jeopardy {
-    width: 50%
-}
+
 button {
     width: 200px;
     height: 50px;
@@ -24,8 +26,9 @@ button {
     border-radius: 50px;
 }
 button:hover {
-    color: white;
+    color: red;
     background-color: black;
     border-radius: 50px;
 }
+
 
