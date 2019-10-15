@@ -2,8 +2,20 @@ body {
     text-align: center;
     background-color: brown;
     color: white;
+    font-size: 20px;
+    font-family: 'Zhi Mang Xing', cursive;
+}
+h1 {
     font-size: 50px;
-    font-family: 'Liu Jian Mao Cao', cursive;
+}
+.page-container{
+    display: flex;
+}
+.chuck-norris {
+    width: 50%
+}
+.jeopardy {
+    width: 50%
 }
 button {
     width: 200px;
@@ -16,3 +28,4 @@ button:hover {
     background-color: black;
     border-radius: 50px;
 }
+
