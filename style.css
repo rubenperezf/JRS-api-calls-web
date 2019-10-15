@@ -13,7 +13,8 @@ h1 {
 }
 .chuck-norris,
 .jeopardy,
-.pokemon {
+.pokemon,
+.trivia {
     width: 50%;
     background-color: white;
     border-radius: 50%;
